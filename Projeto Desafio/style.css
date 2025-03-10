@@ -1,26 +1,32 @@
 * {
   margin: 0px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 header {
   height: 180px;
-  background-color: #FCFC30;
-  display: flex;
+  background-color: #fcfc30;
+  display: block;
+  width: 100%;
   align-items: center;
-  color: #735CC6;
+  color: #735cc6;
+  position: relative;
 }
 
-header #simbolo {
+header .simbolo {
   width: 62px;
   height: 62px;
   top: 63px;
   left: 416px;
 }
 
-header #binoculos {
+header .binoculos {
   height: 162px;
   width: 343px;
+  position: absolute;
+  top: 77px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 body {
@@ -28,7 +34,7 @@ body {
 }
 
 .busca {
-  background-color: #735CC6;
+  background-color: #735cc6;
   height: 410px;
   display: flex;
   flex-direction: column;
@@ -43,29 +49,37 @@ body {
   border-radius: 5px;
   border: none;
   padding: 16px 0px 20px 30px;
-  color: #735CC6;
+  color: #735cc6;
   font-size: 28px;
 }
 
 .busca .searchbox::placeholder {
-  color: #735CC6;
+  color: #735cc6;
 }
 
-.cards{
-  color: #3B3B3B;
+.cards {
+  color: #3b3b3b;
   display: grid;
   gap: 30px;
   background-color: white;
+  align-content: center;
+  justify-content: center;
 }
 
 .card {
   width: 346px;
   height: 200px;
-  border: 1px solid #735CC6;
+  border: 1px solid #735cc6;
   border-radius: 5px;
 }
 
 .card span {
   font-weight: 700;
-  color: #735CC6;
+  color: #735cc6;
+}
+
+.card .title {
+  background: url(./images/Seta.svg) no-repeat right center;
+  display: inline-block;
+  padding-right: 40px;
 }
