@@ -1,0 +1,71 @@
+* {
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  height: 180px;
+  background-color: #FCFC30;
+  display: flex;
+  align-items: center;
+  color: #735CC6;
+}
+
+header #simbolo {
+  width: 62px;
+  height: 62px;
+  top: 63px;
+  left: 416px;
+}
+
+header #binoculos {
+  height: 162px;
+  width: 343px;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.busca {
+  background-color: #735CC6;
+  height: 410px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.busca .searchbox {
+  width: 756px;
+  height: 68px;
+  margin-top: 64px;
+  border-radius: 5px;
+  border: none;
+  padding: 16px 0px 20px 30px;
+  color: #735CC6;
+  font-size: 28px;
+}
+
+.busca .searchbox::placeholder {
+  color: #735CC6;
+}
+
+.cards{
+  color: #3B3B3B;
+  display: grid;
+  gap: 30px;
+  background-color: white;
+}
+
+.card {
+  width: 346px;
+  height: 200px;
+  border: 1px solid #735CC6;
+  border-radius: 5px;
+}
+
+.card span {
+  font-weight: 700;
+  color: #735CC6;
+}
